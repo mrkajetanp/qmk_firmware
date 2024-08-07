@@ -21,10 +21,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,         KC_SCLN,        KC_COMMA,       KC_DOT,         KC_P,           KC_Y,           KC_EQUAL,                                       KC_BSLS,        KC_F,           KC_G,           KC_C,           KC_R,           KC_L,           KC_SLASH,
     KC_ESCAPE,      KC_A,           KC_O,           KC_E,           KC_U,           KC_I,                                                                           KC_D,           KC_H,           KC_T,           KC_N,           KC_S,           KC_KP_MINUS,
     MO(3),          KC_QUOTE,       KC_Q,           KC_J,           KC_K,           KC_X,           TD(DANCE_0),                                    TD(DANCE_1),    KC_B,           KC_M,           KC_W,           KC_V,           KC_Z,           MO(3),
-    KC_LEFT_CTRL,   KC_LEFT_ALT,    KC_LEFT_SHIFT,  KC_LEFT_GUI,    MO(4),                                                                                                          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_RIGHT_CTRL,
-                                                                                                    KC_MEH,         TT(1),          KC_HYPR,        OSL(7),
-                                                                                                                    KC_LEFT_GUI,    TG(5),
-                                                                                    KC_SPACE,       KC_BSPC,        TT(4),          TT(6),          KC_DELETE,      KC_ENTER
+    KC_LEFT_CTRL,   KC_LEFT_ALT,    KC_LEFT_SHIFT,  KC_LEFT_GUI,    MO(2),                                                                                                          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_RIGHT_CTRL,
+                                                                                                    KC_MEH,         TT(1),           KC_HYPR,        OSL(7),
+                                                                                                                    TT(4),           TG(5),
+                                                                                    KC_SPACE,       KC_BSPC,        KC_LEFT_GUI,     TT(6),          KC_DELETE,      KC_ENTER
   ),
 
   // macOS
@@ -39,11 +39,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                                     KC_TRANSPARENT, KC_TRANSPARENT, KC_LEFT_GUI,    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
   ),
 
-  // macOS WM
+  // Alt
   [2] = LAYOUT_ergodox_pretty(
     LALT(KC_1),     LALT(KC_2),     LALT(KC_3),     LALT(KC_4),     LALT(KC_5),     LALT(KC_6),     LALT(KC_7),                                     LALT(KC_8),     LALT(KC_9),     LALT(KC_0),     LALT(LSFT(KC_1)),LALT(LSFT(KC_2)),LALT(LSFT(KC_3)),LALT(LSFT(KC_4)),
-    LALT(KC_TAB),   KC_TRANSPARENT, LALT(KC_COMMA), LALT(KC_DOT),   LALT(KC_P),     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, LALT(KC_F),     KC_TRANSPARENT, LALT(KC_C),     KC_TRANSPARENT, LALT(KC_L),     KC_TRANSPARENT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                 MAC_SPOTLIGHT,  LALT(KC_H),     LALT(KC_T),     LALT(KC_N),     LALT(KC_S),     KC_TRANSPARENT,
+    LALT(KC_TAB),   LALT(KC_SCLN),  LALT(KC_COMMA), LALT(KC_DOT),   LALT(KC_P),     LALT(KC_Y),     KC_TRANSPARENT,                                 KC_TRANSPARENT, LALT(KC_F),     KC_TRANSPARENT, LALT(KC_C),     KC_TRANSPARENT, LALT(KC_L),     KC_TRANSPARENT,
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                 LALT(KC_D),     LALT(KC_H),     LALT(KC_T),     LALT(KC_N),     LALT(KC_S),     KC_TRANSPARENT,
     KC_LEFT_SHIFT,  KC_TRANSPARENT, KC_TRANSPARENT, LALT(KC_J),     LALT(KC_K),     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, LALT(KC_M),     LALT(KC_W),     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_LEFT_GUI,    KC_TRANSPARENT, KC_LEFT_ALT,    KC_LEFT_CTRL,   KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
                                                                                                     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
