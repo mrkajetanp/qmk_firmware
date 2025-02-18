@@ -25,9 +25,9 @@ enum tap_dance_codes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [LAYER_MAIN] = LAYOUT_ergodox_pretty(
-    KC_DLR,          KC_LBRC,        KC_LCBR,        KC_RCBR,        KC_LPRN,        KC_AMPR,       KC_GRAVE,                                       KC_AT,          KC_KP_ASTERISK, KC_RPRN,        KC_KP_PLUS,     KC_RBRC,        KC_EXLM,        KC_HASH,
+    KC_DLR,          KC_LBRC,        KC_LCBR,        KC_RCBR,        KC_LPRN,        KC_AMPR,       KC_GRAVE,                                       KC_AT,          KC_ASTERISK,    KC_RPRN,        KC_PLUS,        KC_RBRC,        KC_EXLM,        KC_HASH,
     KC_TAB,          KC_SCLN,        KC_COMMA,       KC_DOT,         KC_P,           KC_Y,          KC_EQUAL,                                       KC_BSLS,        KC_F,           KC_G,           KC_C,           KC_R,           KC_L,           KC_SLASH,
-    KC_ESCAPE,       KC_A,           KC_O,           KC_E,           KC_U,           KC_I,                                                                          KC_D,           KC_H,           KC_T,           KC_N,           KC_S,           KC_KP_MINUS,
+    KC_ESCAPE,       KC_A,           KC_O,           KC_E,           KC_U,           KC_I,                                                                          KC_D,           KC_H,           KC_T,           KC_N,           KC_S,           KC_MINUS,
     MO(LAYER_SHIFT), KC_QUOTE,       KC_Q,           KC_J,           KC_K,           KC_X,          TD(DANCE_0),                                    TD(DANCE_1),    KC_B,           KC_M,           KC_W,           KC_V,           KC_Z,           MO(LAYER_SHIFT),
     KC_LEFT_CTRL,    KC_LEFT_ALT,    KC_LEFT_SHIFT,  KC_LEFT_GUI,    MO(LAYER_ALT),                                                                                                 KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_RIGHT_CTRL,
                                                                                                     KC_MEH,         TT(LAYER_ALT),           KC_HYPR,               LCTL(KC_UP),
@@ -58,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [LAYER_SUPER] = LAYOUT_ergodox_pretty(
-    LGUI(KC_1),     LGUI(KC_2),     LGUI(KC_3),     LGUI(KC_4),     LGUI(KC_5),     LGUI(KC_6),     KC_TRANSPARENT,                                 KC_TRANSPARENT, LGUI(KC_7),     LGUI(KC_8),     LGUI(KC_9),     LGUI(KC_0),     KC_KP_ASTERISK, KC_TRANSPARENT,
+    LGUI(KC_1),     LGUI(KC_2),     LGUI(KC_3),     LGUI(KC_4),     LGUI(KC_5),     LGUI(KC_6),     KC_TRANSPARENT,                                 KC_TRANSPARENT, LGUI(KC_7),     LGUI(KC_8),     LGUI(KC_9),     LGUI(KC_0),     KC_ASTERISK,    KC_TRANSPARENT,
     LGUI(KC_TAB),   KC_TRANSPARENT, LGUI(KC_LEFT),  LGUI(KC_RIGHT), LGUI(KC_P),     LGUI(KC_Y),     KC_END,                                         KC_HOME,        LGUI(KC_F),     LGUI(KC_G),     LGUI(KC_C),     LGUI(KC_R),     LGUI(KC_L),     KC_TRANSPARENT,
     KC_TRANSPARENT, LGUI(KC_A),     LGUI(KC_O),     LGUI(KC_E),     LGUI(KC_U),     LGUI(KC_I),                                                                     LGUI(KC_D),     LGUI(KC_H),     LGUI(KC_T),     LGUI(KC_N),     LGUI(KC_S),     KC_TRANSPARENT,
     KC_LEFT_SHIFT,  KC_TRANSPARENT, LGUI(KC_Q),     LGUI(KC_J),     LGUI(KC_K),     LGUI(KC_X),     KC_PGDN,                                        KC_PAGE_UP,     LGUI(KC_B),     LGUI(KC_M),     LGUI(KC_W),     LGUI(KC_V),     LGUI(KC_Z),     KC_TRANSPARENT,
